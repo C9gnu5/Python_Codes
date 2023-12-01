@@ -1,11 +1,12 @@
 def main():
-    cd = input(
-        "Choose call destination\t\t\tON-PEAK\tOFF-PEAK"
-        "\n[1]To same network\t\t\t\tP3.00\tP8.00"
-        "\n[2]To other network\t\t\t\tP4.00\tP10.00"
-        "\n[3]To a landline\t\t\t\tP2.00\tP5.00"
-        "\n[4]National direct call\t\t\tP9.00\tP12.00"
-        "\n[5]International direct call\tP20.00\tP25.00\n")
+    cd = input("""
+Call destination              ON-PEAK  OFF-PEAK
+[1]To same network             P3.00    P8.00
+[2]To other network            P4.00    P10.00
+[3]To a landline               P2.00    P5.00
+[4]National direct call        P9.00    P12.00
+[5]International direct call   P20.00   P25.00
+\nChoose call destination:""")
     if cd == "1":
         ct = float(input("Enter call duration:"))
         tc = input("\nEnter time code: [1]ON-PEAK or [2]OFF-PEAK\n")
