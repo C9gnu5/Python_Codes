@@ -8,7 +8,7 @@ class StudentInfo:
         self.allstudents = []
 
     def __str__(self):
-        return f"Name: {self.name}\nAge: {self.age}\nID-number: {self.idnum}\nEmail: {self.email}\nPhone: {self.phone}\n"
+        return f"\nName: {self.name}\nAge: {self.age}\nID-number: {self.idnum}\nEmail: {self.email}\nPhone: {self.phone}\n"
 
     def addStudent(self, var):
         self.allstudents.append(var)

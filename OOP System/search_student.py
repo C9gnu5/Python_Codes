@@ -1,3 +1,5 @@
+import os
+
 class SearchStudent:
     def __init__(self, student_data):
         self.student_data = student_data
@@ -7,11 +9,13 @@ class SearchStudent:
             if student.idnum == id:
                 print("\n============Student's Info============\n")
                 print(student) 
-                return "============Nothing Follows==========="
-        return f"\nStudent with ID Number {id} could not be found!"
+                return "\n============Nothing Follows==========="
+        return f"\nSTUDENT WITH ID NUMBER {id} COULD NOT BE FOUND!"
             
     def printAllStudentInfo(self):
-        print("\n============All Student's Info============\n")
+        os.system('cls')
+        print("\n============ALL STUDENT'S INFO============\n")
         for student in self.student_data.allstudents:
             print(student)
-        print("==============Nothing Follows=============")
+        print("\n==============NOTHING FOLLOWS=============")
+        
